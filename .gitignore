@@ -1,0 +1,10 @@
+*.zip
+*.exe
+*.dll
+*.pdb
+UserData/
+*.db
+*.sqlite*
+*.log
+.env
+.env.*
