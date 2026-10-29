@@ -1,21 +1,27 @@
 # foobar2000 Alienov edition
 
-**foobar2000 Alienov edition beta 0.3.0**
+**foobar2000 Alienov edition**
 
 An unofficial, portable Windows audio player combining a modern x64 WPF interface with the classic foobar2000 0.9.6.9 x86 playback engine.
 
 ## ⬇ Download
 
-### [Download foobar2000 Alienov edition beta 0.3.0 (Windows x64)](https://github.com/hawkedw/foobar2000-alienov-edition/releases/download/v0.3.0/foobar2000-Alienov-edition-beta-0.3.0-win-x64.zip)
+<!-- ALIENOV-RELEASE:BEGIN -->
+## Current portable release: beta 0.3.1
 
-**Version:** beta 0.3.0  
-**Package:** Full portable ZIP  
-**Size:** approximately 201 MiB  
-**Installation:** Not required
+**[Download the complete Windows x64 portable ZIP](https://github.com/hawkedw/foobar2000-alienov-edition/releases/download/v0.3.1/foobar2000-Alienov-edition-beta-0.3.1-win-x64.zip)**
 
-[View release notes and all downloads](https://github.com/hawkedw/foobar2000-alienov-edition/releases/tag/v0.3.0)
+**GitHub Code > Download ZIP is NOT the portable distribution. Use the release asset above.**
 
-> **Important:** To download the actual player, use the link above or the ZIP listed under **Releases → Assets**. GitHub's green **Code → Download ZIP** button downloads repository files, not the portable application.
+- Size: 204241640 bytes.
+- SHA-256: `22B0D5B58D303EF2E5C399A7BCE2934B435ABC2E6E5E42485C6B35B1C054FC8E`
+- [Release notes](https://github.com/hawkedw/foobar2000-alienov-edition/releases/tag/v0.3.1)
+- [SHA256SUMS.txt](https://github.com/hawkedw/foobar2000-alienov-edition/releases/download/v0.3.1/SHA256SUMS.txt)
+
+Runtime/visual acceptance of this candidate: NOT VERIFIED. Existing profiles are preserved; fresh installs receive the configured factory UI. Third-party redistribution limitations remain disclosed in the notices and release notes.
+
+
+<!-- ALIENOV-RELEASE:END -->
 
 ## Getting started
 
@@ -66,13 +72,7 @@ The integrated updater is a beta feature. Its complete real-world installation, 
 
 ## Release verification
 
-The SHA-256 checksum of the beta 0.3.0 portable ZIP is:
-
-```text
-5506DCDE2C83248F2328DABE4B6AA5B0DFC3CFD4D3F449CF752CBC50AFE42A12
-```
-
-[Download SHA256SUMS.txt](https://github.com/hawkedw/foobar2000-alienov-edition/releases/download/v0.3.0/SHA256SUMS.txt)
+The current portable ZIP checksum is shown in the Download section above and in [SHA256SUMS.txt](SHA256SUMS.txt).
 
 ## Beta status
 

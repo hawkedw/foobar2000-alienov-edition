@@ -1,14 +1,14 @@
 {
-  "product": "foobar2000 Alienov edition",
-  "version": "0.3.0",
-  "channel": "beta",
-  "displayVersion": "beta 0.3.0",
-  "nextPatchVersion": "0.3.1",
-  "repository": "hawkedw/foobar2000-alienov-edition",
-  "tag": "v0.3.0",
-  "title": "foobar2000 Alienov edition beta 0.3.0",
-  "prerelease": true,
-  "asset": "foobar2000-Alienov-edition-beta-0.3.0-win-x64.zip",
-  "status": "LOCAL_ONLY_NOT_PUBLISHED",
-  "publicationAuthorized": false
+    "status":  "PRERELEASE",
+    "publicationAuthorized":  true,
+    "product":  "foobar2000 Alienov edition",
+    "version":  "0.3.1",
+    "channel":  "beta",
+    "displayVersion":  "beta 0.3.1",
+    "nextPatchVersion":  "0.3.2",
+    "repository":  "hawkedw/foobar2000-alienov-edition",
+    "tag":  "v0.3.1",
+    "title":  "foobar2000 Alienov edition beta 0.3.1",
+    "prerelease":  true,
+    "asset":  "foobar2000-Alienov-edition-beta-0.3.1-win-x64.zip"
 }
