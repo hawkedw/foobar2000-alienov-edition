@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.3 - beta
+
+- Guard MilkDrop startup with a bounded Direct3D 9 windowed-device check before native Start. Refused graphics starts show one in-panel diagnostic and Retry instead of entering the known native modal-error path. Shpeck/MilkDrop binaries remain unchanged.
+- Replace two-stage Music Library setup with Choose Music Folder and Open Library Settings. Registering a Music root starts background indexing automatically; X dismisses onboarding for this launch only. Zero Music roots shows onboarding again next launch; Telegram sources do not count.
+- Resume incomplete initial indexes automatically, preserving committed records and identities. Completed roots retain incremental watchers without a new full initial scan.
+- Traverse sibling folders deterministically A-Z. Show throttled physical-file/logical-track counts and reliable folder/artist context in the existing status bar, without a floating progress window. Unknown totals remain indeterminate rather than displaying a fabricated percentage.
+- Include updater handoff/lifetime and retained-error recovery corrections. Remove the redundant trust checkbox while retaining explicit Install and restart consent, archive integrity checks and rollback.
+- Preserve playlist width corrections, sanitized Alienov factory appearance, package-local UserData, the launcher-only post-first-launch origin-mark operation and frozen native identities.
+
 ## 0.3.2 - beta
 
 - Fixed initial music-folder registration, indexing-state visibility and MAIN/Library Tree refresh. Committed partial indexes remain readable; newly registered roots report their validated availability.
