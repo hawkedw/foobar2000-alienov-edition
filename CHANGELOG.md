@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.2 - beta
+
+- Fixed initial music-folder registration, indexing-state visibility and MAIN/Library Tree refresh. Committed partial indexes remain readable; newly registered roots report their validated availability.
+- Added visible, explicitly consented root-scoped indexing progress, cancellation and targeted retry.
+- Corrected Playlist Workspace column allocation: surplus viewport width fills text columns without overwriting saved widths.
+- After Windows permits the user's initial launch and portable startup succeeds, remove only Internet ZoneId=3 metadata from the exact running portable launcher. Missing ADS is a no-write operation; failures are nonfatal. No recursive unblocking or changes to other files or streams.
+- Preserve personal portable UserData and existing settings during upgrades, while retaining clean factory UI defaults for fresh installations.
+- Keep the frozen native backend, bridge and other Frozen payload identities unchanged. The integrated consent-based GitHub updater remains included.
+
 ## 0.3.1 - beta
 
 - Fresh factory defaults now reproduce the saved daily-driver layout and appearance.

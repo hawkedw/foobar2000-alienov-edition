@@ -1,27 +1,30 @@
-# foobar2000 Alienov edition beta 0.3.1
+# foobar2000 Alienov edition beta 0.3.2
 
-- Fresh factory defaults now reproduce the saved daily-driver layout and appearance.
-- Playlist columns, widths, formatting, grouping, colors and panel proportions are included in clean-install defaults.
-- Existing user profiles remain preserved during upgrades; this release does not silently reset personalized UI.
-- The GitHub updater, explicit installation consent and rollback support remain included.
-- Portable ZIP entries use canonical forward slashes; package extraction and the 0.3.0 to 0.3.1 transition pass the actual published 0.3.0 updater contract without changing updater code or payload files.
+- Fixed initial music-folder registration, indexing-state visibility and MAIN/Library Tree refresh. Committed partial indexes remain readable; newly registered roots report their validated availability.
+- Added visible, explicitly consented root-scoped indexing progress, cancellation and targeted retry.
+- Corrected Playlist Workspace column allocation: surplus viewport width fills text columns without overwriting saved widths.
+- After Windows permits the user's initial launch and portable startup succeeds, remove only Internet ZoneId=3 metadata from the exact running portable launcher. Missing ADS is a no-write operation; failures are nonfatal. No recursive unblocking or changes to other files or streams.
+- Preserve personal portable UserData and existing settings during upgrades, while retaining clean factory UI defaults for fresh installations.
+- Keep the frozen native backend, bridge and other Frozen payload identities unchanged. The integrated consent-based GitHub updater remains included.
 
 ## Download
 
-Use the complete portable release asset, not GitHub Code > Download ZIP.
+Use the complete portable release ZIP. GitHub Code > Download ZIP is NOT the portable application.
 
-Asset: `foobar2000-Alienov-edition-beta-0.3.1-win-x64.zip`
+Asset: `foobar2000-Alienov-edition-beta-0.3.2-win-x64.zip`
 
-Size: 204241640 bytes.
+Size: 204261616 bytes.
 
-SHA-256: `22B0D5B58D303EF2E5C399A7BCE2934B435ABC2E6E5E42485C6B35B1C054FC8E`
+SHA-256: `7B2C452C94EF9F1559D3D46BD67732A311F0AA8637A03B5122513227806CA1C3`
 
-## Known limitations
+## Acceptance and Windows security limitations
 
-Actual visual/first-launch/end-to-end runtime acceptance of this candidate is **NOT VERIFIED**. Configuration, bootstrap, package hashes and synthetic tests have passed; those checks do not replace real player acceptance. Library Tree preserves the Ubuntu Light font preference; its availability and DPI-dependent appearance on other Windows systems are not verified.
+Actual downloaded-client startup, full update download/shutdown/installation/rollback/restart, recipient Explorer warning behavior and clean-Windows acceptance are **NOT VERIFIED**. Focused tests and package/manifest/updater-contract validation do not replace these gates. Existing factory font preferences remain environment-dependent.
 
-The corrected archive passes path, complete extraction/hash and manifest-transition validation through the updater assemblies from published beta 0.3.0 and this beta 0.3.1. All payload files, native identities and factory UI defaults are unchanged. This focused compatibility check does not establish live GitHub download, shutdown, replacement, rollback or restart acceptance.
+The launcher-only operation runs after the initial Windows execution decision. It does not provide an Authenticode signature, suppress SmartScreen, create publisher reputation, bypass a security block or override security policies. This accepted package remains unsigned. Restricted/unsupported/denied metadata operations are retained or fail nonfatally without elevation.
+
+The immutable package retains its preparation metadata (`runtime-manifest.json`: localOnly=true, releaseReady=false; packaged release.json: LOCAL_ONLY_NOT_PUBLISHED, publicationAuthorized=false). Those fields were not edited to claim acceptance; public release status is recorded separately by GitHub and repository metadata after authorized publication.
 
 ## Licensing and redistribution
 
-The project-owned noncommercial license and all third-party notices remain unchanged. Noncommercial intent and owner approval do not confer third-party redistribution rights. Existing unresolved distribution/source/notice obligations include the extracted legacy foobar2000 backend, WilB-derived material, custom SACD components, Shpeck, Winamp/MilkDrop/presets, Microsoft VC/DirectX components, and FFmpeg/Chromaprint/transitive dependencies. This release note does not represent those restrictions as resolved. See LICENSING.md, DISTRIBUTION.md and THIRD_PARTY_NOTICES.md.
+PolyForm Noncommercial and existing third-party notices remain unchanged. Existing third-party redistribution/source/notice restrictions remain unresolved for the legacy foobar2000 backend, WilB-derived material, SACD components, Shpeck, Winamp/MilkDrop/presets, Microsoft VC/DirectX components and FFmpeg/Chromaprint/transitive dependencies. Technical validation, noncommercial intent and publication approval do not confer third-party permissions. See LICENSING.md, DISTRIBUTION.md and THIRD_PARTY_NOTICES.md.
