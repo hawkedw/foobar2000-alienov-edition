@@ -7,16 +7,16 @@ An unofficial, portable Windows audio player combining a modern x64 WPF interfac
 ## ⬇ Download
 
 <!-- ALIENOV-RELEASE:BEGIN -->
-## Current portable release: beta 0.3.3
+## Current portable release: beta 0.3.4
 
-**[Download the complete Windows x64 portable ZIP](https://github.com/hawkedw/foobar2000-alienov-edition/releases/download/v0.3.3/foobar2000-Alienov-edition-beta-0.3.3-win-x64.zip)**
+**[Download the complete Windows x64 portable ZIP](https://github.com/hawkedw/foobar2000-alienov-edition/releases/download/v0.3.4/foobar2000-Alienov-edition-beta-0.3.4-win-x64.zip)**
 
 **GitHub Code > Download ZIP is NOT the portable distribution. Use the release asset above.**
 
-- Size: 210575489 bytes.
-- SHA-256: `86B26571BA9110AB169B81F4A69F8898CB1114D9C87AD9533063417E01338026`
-- [Release notes](https://github.com/hawkedw/foobar2000-alienov-edition/releases/tag/v0.3.3)
-- [SHA256SUMS.txt](https://github.com/hawkedw/foobar2000-alienov-edition/releases/download/v0.3.3/SHA256SUMS.txt)
+- Size: 204300548 bytes.
+- SHA-256: `C0C5EB9614766A8BE50CA813085DA0EA59DEEC0C2B993B600513DACF126A41F0`
+- [Release notes](https://github.com/hawkedw/foobar2000-alienov-edition/releases/tag/v0.3.4)
+- [SHA256SUMS.txt](https://github.com/hawkedw/foobar2000-alienov-edition/releases/download/v0.3.4/SHA256SUMS.txt)
 
 Runtime/visual acceptance of this candidate: NOT VERIFIED. Existing profiles are preserved; fresh installs receive the configured factory UI. Third-party redistribution limitations remain disclosed in the notices and release notes.
 

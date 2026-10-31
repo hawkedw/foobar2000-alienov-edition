@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.4 - beta
+
+- Stabilize MAIN refresh during background indexing with bounded, coalesced updates that preserve the existing presentation when rows and columns have not changed.
+- Remove redundant playlist-local footers. Playlist information and indexing progress use the existing compact global status bar.
+- Eliminate horizontal playlist scrolling: effective columns fit the available viewport, including vertical-scrollbar space, while preserving saved user column preferences and responsive text priorities. MAIN, custom and secondary playlist layouts share the corrected measurement behavior.
+- Add independently configurable track count and total duration to the global status bar, using the full semantic playlist scope rather than only loaded viewport rows. Unknown durations and partial results remain explicit.
+- Preserve indexing status priority. While indexing is active its progress takes precedence; completion restores the selected playlist's summary without an obsolete completion banner displacing it.
+- Improve MilkDrop unavailable diagnostics and Retry, with the existing Album Artwork fallback when visualization cannot start. The selected native visualization binaries and audio path remain unchanged.
+
 ## 0.3.3 - beta
 
 - Guard MilkDrop startup with a bounded Direct3D 9 windowed-device check before native Start. Refused graphics starts show one in-panel diagnostic and Retry instead of entering the known native modal-error path. Shpeck/MilkDrop binaries remain unchanged.
