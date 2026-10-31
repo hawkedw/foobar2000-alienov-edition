@@ -1,38 +1,42 @@
-# foobar2000 Alienov edition beta 0.3.4
+# foobar2000 Alienov edition beta 0.3.5
 
-- Stabilize MAIN refresh during background indexing with bounded, coalesced updates that preserve the existing presentation when rows and columns have not changed.
-- Remove redundant playlist-local footers. Playlist information and indexing progress use the existing compact global status bar.
-- Eliminate horizontal playlist scrolling: effective columns fit the available viewport, including vertical-scrollbar space, while preserving saved user column preferences and responsive text priorities. MAIN, custom and secondary playlist layouts share the corrected measurement behavior.
-- Add independently configurable track count and total duration to the global status bar, using the full semantic playlist scope rather than only loaded viewport rows. Unknown durations and partial results remain explicit.
-- Preserve indexing status priority. While indexing is active its progress takes precedence; completion restores the selected playlist's summary without an obsolete completion banner displacing it.
-- Improve MilkDrop unavailable diagnostics and Retry, with the existing Album Artwork fallback when visualization cannot start. The selected native visualization binaries and audio path remain unchanged.
+- Add bounded automatic MilkDrop graphics-admission recovery, with a finite retry budget and coalesced display/foreground/resume triggers. Manual Retry and the existing Album Artwork fallback remain available; playback and fullscreen ownership are preserved.
+- Move early native startup-window containment onto a dedicated message pump so busy main-window work does not delay the established hidden-to-embedded handoff. Exact process/generation checks and existing native plugin binaries remain unchanged.
+- Fix updater helper startup identity capture: allow bounded asynchronous readiness of the observed executable path while retaining exact PID, creation-time and path checks. Failed, wrong-generation or inaccessible helpers are not accepted.
+- Use one explicit **Update and restart** action to download, verify, install and restart. No second install confirmation is needed. Discovery alone does not install; cancellation before handoff, retained-payload Retry, integrity checks and rollback safeguards remain.
+- Correct Telegram Connect for an existing session directory already owned by the current Windows user with Modify-only permissions. Preserve that owner while securing the private DACL; foreign ownership remains rejected and protected session data is not reset.
+- Show Connecting, actionable errors and Retry directly in Telegram Account. Authorization prompts belong to Preferences; Add source becomes available only after Connected. Existing per-application session isolation, DPAPI protection and TDLib trust checks remain.
 
 ## Download
 
 Use the complete Windows x64 portable ZIP. GitHub Code > Download ZIP is NOT the portable application.
 
-Asset: `foobar2000-Alienov-edition-beta-0.3.4-win-x64.zip`
+Asset: `foobar2000-Alienov-edition-beta-0.3.5-win-x64.zip`
 
-Size: 204300548 bytes.
+Size: 204316492 bytes.
 
-SHA-256: `C0C5EB9614766A8BE50CA813085DA0EA59DEEC0C2B993B600513DACF126A41F0`
+SHA-256: `BF7B56C0491E1F51FA36AA1CF8F9BD266FDC0DC78D933F663B337C284220CE21`
 
-Existing UserData, playlists, settings and Telegram sessions remain outside update payloads. Factory defaults remain install-only-if-absent; frozen native identities are preserved.
+Existing user libraries, playlists, settings and Telegram sessions remain outside the update payload. Frozen native identities and accepted factory defaults are preserved. No personal UserData, credentials or session database is included.
 
-## Verification and limitations
+## Updating from beta 0.3.4
 
-The existing 416 focused managed/SQLite/WPF tests and isolated rendered reviews cover the scoped playlist layout, indexing refresh and global-status changes. This publication preparation reuses those results without rebuilding the player or repeating that suite.
+The installed beta 0.3.4 still performs this transition with its own existing controller and trusted helper. Incoming files cannot retroactively change that client's startup behavior or buttons; its existing installation confirmation and an explicit Retry may still be needed. The new one-click workflow and helper-startup correction become active after beta 0.3.5 is installed, for updates initiated by that client.
 
-Both exact published beta 0.3.3 Desktop and helper updater contracts have passed verified extraction of this exact ZIP, full manifest coverage and file hashes, and the 0.3.3 to 0.3.4 transition with all 1254 Frozen files unchanged. The archive contains no personal UserData, library database, playlists or account sessions. These are package-contract checks, not a live update installation.
+Do not unpack a clean profile over an existing installation or delete updater recovery evidence. Keep the existing profile and use its verified update/recovery path.
 
-Native MilkDrop Direct3D recovery remains **NOT VERIFIED on the affected PC**. Unavailable/Retry/fallback presentation and managed guards do not establish native device recovery or prove that all graphics problems are fixed. A device loss after admission can still reach unchanged native plugin behavior.
+## Verification and remaining limitations
 
-Full clean-Windows startup, continuous real-library indexing/navigation behavior, physical mixed-DPI behavior and real update download/shutdown/install/rollback/restart remain **NOT VERIFIED** for this candidate. The optional 50,000-item scale gate was not run. Isolated WPF renders and package contracts do not replace those acceptance gates.
+The combined focused regression run passed 319 tests using synthetic profiles, fake Telegram clients, controlled windows/processes and isolated WPF views. Compiled package checks confirm the three accepted changes are included, not just present in source. Both exact published beta 0.3.4 Desktop and helper contracts passed full verified extraction, manifest coverage/file hashes and transition to this exact 0.3.5 ZIP; all 1254 Frozen identities remain unchanged.
 
-The application is unsigned. Existing launcher-only post-first-launch origin handling does not sign code, suppress SmartScreen, confer publisher reputation or change security policy. Factory font rendering remains environment-dependent.
+Previous bounded preview evidence includes tentative owner-positive observation of embedded MilkDrop startup and normal close. It does not establish universal absence of transient windows or real device-loss recovery in this packaged release. Actual DEVICELOST-to-device-available recovery, all graphics environments, full clean-Windows startup and complete live update download/shutdown/install/rollback/restart remain **NOT VERIFIED**. Native Direct3D can still refuse access, including after a successful preflight.
 
-Immutable package preparation metadata remains localOnly=true/releaseReady=false and LOCAL_ONLY_NOT_PUBLISHED/publicationAuthorized=false. Those historical preparation fields are not changed to imply publication; any authorized publication status is recorded separately.
+Real Telegram API authorization, phone/code/2FA, actual server rejection and successful live Add source remain **NOT VERIFIED**. Tests use fake clients and disposable data. The earlier no-credentials native load check is not a successful login. Full native authorization-modal pixel acceptance and physical mixed-DPI behavior are also unverified. Existing conservative handling of partial native initialization may require restarting the player; it does not reset stored credentials or sessions automatically.
+
+The application remains unsigned. Existing launcher-only post-first-launch origin handling does not sign code, suppress SmartScreen, confer publisher reputation or change security policy. Font rendering remains environment-dependent.
+
+Immutable package preparation metadata remains localOnly=true/releaseReady=false and LOCAL_ONLY_NOT_PUBLISHED/publicationAuthorized=false. Those historical preparation fields are not rewritten to imply publication; authorized publication status is recorded separately.
 
 ## Licensing and redistribution
 
-PolyForm Noncommercial and existing third-party license/notices remain unchanged. Existing redistribution/source/notice restrictions remain unresolved for the legacy foobar2000 backend, WilB-derived material, SACD components, Shpeck, Winamp/MilkDrop/presets, Microsoft VC/DirectX components and FFmpeg/Chromaprint/transitive dependencies. Technical validation, noncommercial intent and owner publication approval do not confer third-party permissions. See LICENSING.md, DISTRIBUTION.md and THIRD_PARTY_NOTICES.md.
+PolyForm Noncommercial and existing third-party notices remain unchanged. Existing redistribution/source/notice restrictions remain unresolved for the legacy foobar2000 backend, WilB-derived material, SACD components, Shpeck, Winamp/MilkDrop/presets, Microsoft VC/DirectX components and FFmpeg/Chromaprint/transitive dependencies. Technical verification, noncommercial intent and owner publication approval do not confer third-party permissions. See LICENSING.md, DISTRIBUTION.md and THIRD_PARTY_NOTICES.md.

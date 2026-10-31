@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.5 - beta
+
+- Add bounded automatic MilkDrop graphics-admission recovery, with a finite retry budget and coalesced display/foreground/resume triggers. Manual Retry and the existing Album Artwork fallback remain available; playback and fullscreen ownership are preserved.
+- Move early native startup-window containment onto a dedicated message pump so busy main-window work does not delay the established hidden-to-embedded handoff. Exact process/generation checks and existing native plugin binaries remain unchanged.
+- Fix updater helper startup identity capture: allow bounded asynchronous readiness of the observed executable path while retaining exact PID, creation-time and path checks. Failed, wrong-generation or inaccessible helpers are not accepted.
+- Use one explicit **Update and restart** action to download, verify, install and restart. No second install confirmation is needed. Discovery alone does not install; cancellation before handoff, retained-payload Retry, integrity checks and rollback safeguards remain.
+- Correct Telegram Connect for an existing session directory already owned by the current Windows user with Modify-only permissions. Preserve that owner while securing the private DACL; foreign ownership remains rejected and protected session data is not reset.
+- Show Connecting, actionable errors and Retry directly in Telegram Account. Authorization prompts belong to Preferences; Add source becomes available only after Connected. Existing per-application session isolation, DPAPI protection and TDLib trust checks remain.
+
 ## 0.3.4 - beta
 
 - Stabilize MAIN refresh during background indexing with bounded, coalesced updates that preserve the existing presentation when rows and columns have not changed.
