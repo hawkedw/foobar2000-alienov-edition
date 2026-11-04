@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.8 - beta
+
+- Improve durable library indexing with generation checkpoints, interruption/resume, bounded retries and root progress.
+- Improve CUE handling and classify unsupported or unresolved descriptors as nonfatal skips where appropriate.
+- Keep completed Library roots quiet while providing accurate scan totals, warning categories and compact diagnostics.
+- Add Save full diagnostic log to export all stored diagnostic records from one consistent generation/epoch, beyond the old diagnostics page limit, without starting a scan.
+- Include the accepted Telegram connection/authorization workflow, source Refresh, history indexing and Search navigation improvements.
+- Preserve existing settings, playlists and Telegram sessions through the accepted update path. Keep the integrated GitHub updater and its integrity/recovery protections.
+- Include Library Tree Refresh/Analysis admission fixes, forced BPM feedback, package-root AcoustID/fpcalc resolution, keyboard context-menu ownership and status-message expiry protection.
+
 ## 0.3.5 - beta
 
 - Add bounded automatic MilkDrop graphics-admission recovery, with a finite retry budget and coalesced display/foreground/resume triggers. Manual Retry and the existing Album Artwork fallback remain available; playback and fullscreen ownership are preserved.
