@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.10 - beta
+
+- Free an update slot by retiring verified, superseded update history when the retained-operation limit is reached. Active, recoverable and reusable attempts stay available.
+
 ## 0.3.9 - beta
 
 - Reuse a compact playback sequence so Shuffle, Next and Previous can move through large playlists with less work.

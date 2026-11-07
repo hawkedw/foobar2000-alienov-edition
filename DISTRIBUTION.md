@@ -1,8 +1,8 @@
 # Distribution status
 
-The owner explicitly authorized publication of **foobar2000 Alienov edition beta 0.3.9** as a complete portable GitHub prerelease. This authorization supersedes the earlier LOCAL MODE B publication hold for this release.
+The owner explicitly authorized publication of **foobar2000 Alienov edition beta 0.3.10** as a complete portable GitHub prerelease. This authorization supersedes the earlier LOCAL MODE B publication hold for this release.
 
-Use the [complete portable ZIP](https://github.com/hawkedw/foobar2000-alienov-edition/releases/download/v0.3.9/foobar2000-Alienov-edition-beta-0.3.9-win-x64.zip) and its matching [SHA256SUMS.txt](https://github.com/hawkedw/foobar2000-alienov-edition/releases/download/v0.3.9/SHA256SUMS.txt). GitHub Code > Download ZIP is not the player distribution.
+Use the [complete portable ZIP](https://github.com/hawkedw/foobar2000-alienov-edition/releases/download/v0.3.10/foobar2000-Alienov-edition-beta-0.3.10-win-x64.zip) and its matching [SHA256SUMS.txt](https://github.com/hawkedw/foobar2000-alienov-edition/releases/download/v0.3.10/SHA256SUMS.txt). GitHub Code > Download ZIP is not the player distribution.
 
 The accepted ZIP is preserved byte-for-byte and retains historical local-preparation status documents and metadata. Current publication status is recorded by this repository and the GitHub release; those historical fields do not select a different package.
 
