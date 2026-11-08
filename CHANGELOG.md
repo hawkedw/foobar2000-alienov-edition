@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 - beta
+
+- Biography has four layouts, with B as the default, and profile-style artist images with circle and square options.
+- Biography can rotate its artist gallery, filter discography from the main text, and fall back to Wikipedia when the official Last.fm biography is unavailable.
+- Library Tree navigation switches MAIN more responsively, especially when opening consecutive folders.
+- Search the active playlist and the Library Tree side by side. Select a result to reveal its exact row, or use Play or Jump to from the result menu.
+
 ## 0.3.10 - beta
 
 - Free an update slot by retiring verified, superseded update history when the retained-operation limit is reached. Active, recoverable and reusable attempts stay available.
