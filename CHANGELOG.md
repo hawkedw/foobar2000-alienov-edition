@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.1 - beta
+
+- Fix an automatic playback stop caused by mixed backend observations at the end of a track.
+- In sequential playback, finish the current track before continuing from the first row of a newly opened Library Tree folder.
+- Recover Biography from verified album and artist evidence when MusicBrainz is temporarily unavailable. Keep conflicting artist identities unresolved.
+- Scroll the artist photo strip independently of the biography text, with hidden scrollbars and reuse of decoded thumbnails.
+- Place Choose Music Folder first in the first-run setup and keep it as the primary action.
+- Reopen Preferences at its last selected section, including after restarting the player.
+
 ## 0.4.0 - beta
 
 - Biography has four layouts, with B as the default, and profile-style artist images with circle and square options.
