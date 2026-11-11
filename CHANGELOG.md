@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.2 - beta
+
+- Smooth the Waveform playback cursor between native position updates.
+- Double-click the elapsed time to seek to a timestamp. Press Enter to apply or Escape to cancel.
+- Show elapsed time above the Waveform and a fixed 0:00 at the start of the timeline.
+- Show newly calculated BPM in the open MAIN playlist as results are saved.
+- Improve regression coverage for playback timing, library navigation and playlist updates.
+
 ## 0.4.1 - beta
 
 - Fix an automatic playback stop caused by mixed backend observations at the end of a track.

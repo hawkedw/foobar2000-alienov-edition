@@ -1,14 +1,13 @@
-# foobar2000 Alienov edition beta 0.4.1
+# foobar2000 Alienov edition beta 0.4.2
 
-- Fix an automatic playback stop caused by mixed backend observations at the end of a track.
-- In sequential playback, finish the current track before continuing from the first row of a newly opened Library Tree folder.
-- Recover Biography from verified album and artist evidence when MusicBrainz is temporarily unavailable. Keep conflicting artist identities unresolved.
-- Scroll the artist photo strip independently of the biography text, with hidden scrollbars and reuse of decoded thumbnails.
-- Place Choose Music Folder first in the first-run setup and keep it as the primary action.
-- Reopen Preferences at its last selected section, including after restarting the player.
+- Smooth the Waveform playback cursor between native position updates.
+- Double-click the elapsed time to seek to a timestamp. Press Enter to apply or Escape to cancel.
+- Show elapsed time above the Waveform and a fixed 0:00 at the start of the timeline.
+- Show newly calculated BPM in the open MAIN playlist as results are saved.
+- Improve regression coverage for playback timing, library navigation and playlist updates.
 
 ## Portable update
 
-Beta 0.4.0 can update through the trusted portable updater. The update preserves the existing schema-33 Library, preferences, playlists and Biography cache. The packaged Last.fm application key is extractable and is separate from account credentials.
+Beta 0.4.1 can update through the trusted portable updater. Existing schema-33 Library data, settings, layouts, playlists and Biography cache are preserved.
 
-This release is unsigned. Clean-Windows acceptance remains NOT VERIFIED. Biography depends on provider availability and sufficient identity evidence. Existing third-party redistribution, source and notice conditions still apply.
+The application is unsigned. Clean-Windows acceptance remains NOT VERIFIED. The bundled Last.fm application key is extractable. Existing third-party redistribution, source and notice conditions still apply.
