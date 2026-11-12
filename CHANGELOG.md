@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.3 - beta
+
+- Close the owned legacy playback backend when exiting during playback.
+- Keep the Waveform cursor and played-fill boundary visually aligned, and recover analysis after interrupted requests.
+- Sort local MAIN by album artist, then by album year, album title, disc and track. Existing profiles using the old factory Year sort adopt the new default. Custom sort settings and manual playlist orders are preserved.
+- Restore MAIN selection without rebuilding the visible list, and hide the player window before panel shutdown.
+
 ## 0.4.2 - beta
 
 - Smooth the Waveform playback cursor between native position updates.
