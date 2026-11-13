@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.4 - beta
+
+- MAIN opens at the first row when you select a different folder in Library Tree. Selecting the same folder keeps your scroll position.
+- Single-folder MAIN queries do less work in SQLite by skipping duplicate elimination where the query branches cannot overlap.
+- A bounded first-page cache lets MAIN return to previously visited, unchanged folders without showing Loading on a valid cache hit. The first visit to a large folder can still take about 1–2 seconds in the tested setup.
+
 ## 0.4.3 - beta
 
 - Close the owned legacy playback backend when exiting during playback.
