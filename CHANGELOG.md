@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.5 - beta
+
+- MAIN renders rows with less work during folder changes and scrolling. Playback following no longer cancels a pending MAIN page before a valid replacement is ready.
+- Warm Library Tree revisits can show the correct first rows without Loading. Cold navigation and Shuffle Next do less SQLite work for eligible scopes while preserving order and track identities.
+- Generated CUE descriptors now live in the hidden .FoobarCueCache directory inside the configured music root. Selecting an indexed CUE track can regenerate a missing descriptor using the original audio.
+- After the portable updater applies 0.4.5 over 0.4.4, the first launch checks configured volumes for verified obsolete CUE cache files. An active native backend or filesystem lock defers removal. Unrecognized files and renamed directories are preserved.
+
 ## 0.4.4 - beta
 
 - MAIN opens at the first row when you select a different folder in Library Tree. Selecting the same folder keeps your scroll position.
